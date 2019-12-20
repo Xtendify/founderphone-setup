@@ -4,11 +4,11 @@ Add Talkative to your web app in less than 5 minutes
 
 1. Login to [Talkative](https://meettalkative.com) and click Create an app
 2. Copy the code snippet you see in the Install page in to `<head>` of every page of your site where you might want to reach a user. The snippet should look like this:
+
 ```
 <!-- Start of Async Talkative Code -->
 <script>
 "use strict";
-
 !function() {
   var t = window.talkative || [];
   if (!t.init) {
@@ -33,6 +33,7 @@ talkative.load(YOUR_APP_ID);
 </script>
 <!-- End of Async Drift Code -->
 ```
+
 where `YOUR_APP_ID` is the Talkative App ID of your app that you can find in Install
 
 You can reach your users on any page which has the above snippet. You'll see them online in your dashboard and can call them at any time.
