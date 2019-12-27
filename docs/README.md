@@ -10,7 +10,7 @@ Add Talkative to your web app in less than 5 minutes
   <script async src="https://meettalkative.com/resources/talkative.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function(event) {
-      talkative.load(YOUR_APP_ID});
+      talkative.load(YOUR_APP_ID);
     });
   </script>
 ```
