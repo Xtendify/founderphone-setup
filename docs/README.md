@@ -9,13 +9,23 @@ Login to [Talkative](https://meettalkative.com) and click Create an app.  Fill o
 Copy the code snippet you see in the Install page in to `<head>` of every page of your site where you might want to reach a user. The snippet should look like this:
 
 ```
-<!-- Start of async Talkative snippet -->
-  <script async src="https://meettalkative.com/resources/talkative.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      window.talkative.load(YOUR_APP_ID);
-    });
-  </script>
+<!-- Start of async Talkative code -->
+<script>
+const TALKATIVE_APP_ID = YOUR_APP_ID;
+!(function() {
+  (o = document.createElement("script")),
+    (o.type = "text/javascript"),
+    (o.id = "talkativeSdkScipt"),
+    (o.crossorigin = "anonymous"),
+    (o.src = "https://meettalkative.com/resources/talkative.min.js"),
+    (n = document.getElementsByTagName("script")[0]),
+    n.parentNode.insertBefore(o, n);
+})();
+talkativeSdkScipt.addEventListener("load", function() {
+  talkative.load(TALKATIVE_APP_ID);
+});
+</script>
+<!-- End of async Talkative code -->
 ```
 where `YOUR_APP_ID` is the Talkative App ID of your app that you can find in the Install page
 
