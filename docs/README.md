@@ -64,4 +64,7 @@ Identify users by email to figure out who to reach out to for user interviews
 | load     | appID: String     | None         | On every page you want to use Talkative | talkative.load("2XlXiopHy")                  |
 | identify | email: String     | None         | When you're logging in a user           | talkative.identify("test@meettalkative.com") |
 | track    | eventName: String | None         | At time of any event you want to track  | talkative.track("Onboarding complete")       |
-| logout   | None              | None         | When you're signing out a user          | talkative.logout()                           |
+| logout   | None              | None         | When you're logging out a user          | talkative.logout()                           |
+
+
+If you have any trouble at all with installation, just email us at <support@meettalkative.com> or on the chat in the bottom right. We'll get back to you in 12 hours or less.
