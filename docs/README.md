@@ -56,3 +56,12 @@ Identify users by email to figure out who to reach out to for user interviews
 1. If you want to identify users with their email address, you can call `talkative.identify(YOUR_USERS_EMAIL)` on any page that has the Talkative snippet from above. As soon as you call this function, the unidentified user on your page will be labeled with `YOUR_USERS_EMAIL` going forward. 
 
 2. When logging out your user, call `talkative.logout()` so that we no longer associate new users visiting your page in the same browser.
+
+# API
+
+| Function | Parameters        | Return Value | Where to call                           | Example                                      |
+|----------|-------------------|--------------|-----------------------------------------|----------------------------------------------|
+| load     | appID: String     | None         | On every page you want to use Talkative | talkative.load("2XlXiopHy")                  |
+| identify | email: String     | None         | When you're logging in a user           | talkative.identify("test@meettalkative.com") |
+| track    | eventName: String | None         | At time of any event you want to track  | talkative.track("Onboarding complete")       |
+| logout   | None              | None         | When you're signing out a user          | talkative.logout()                           |
