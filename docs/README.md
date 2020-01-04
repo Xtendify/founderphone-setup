@@ -11,7 +11,6 @@ Copy the code snippet you see in the Install page in to `<head>` of every page o
 ```
 <!-- Start of async Talkative code -->
 <script>
-const TALKATIVE_APP_ID = YOUR_APP_ID;
 !(function() {
   (o = document.createElement("script")),
     (o.type = "text/javascript"),
@@ -22,7 +21,7 @@ const TALKATIVE_APP_ID = YOUR_APP_ID;
     n.parentNode.insertBefore(o, n);
 })();
 talkativeSdkScipt.addEventListener("load", function() {
-  talkative.load(TALKATIVE_APP_ID);
+  talkative.load(YOUR_APP_ID);
 });
 </script>
 <!-- End of async Talkative code -->
