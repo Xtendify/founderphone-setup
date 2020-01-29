@@ -67,13 +67,3 @@ Identify users by email to figure out who to reach out to for user interviews
 
 
 If you have any trouble at all with installation, just email us at <support@meettalkative.com> or on the chat in the bottom right. We'll get back to you in 12 hours or less.
-
-# Google Tag Manager
-If you use Google Tag Manager, follow these steps:
-1. Open up your account and head to the workspace for your site
-2. Select New Tag
-3. In Tag Configuration, select Custom HTML
-4. Copy and paste the Talkative JavaScript snippet from above with your App ID
-5. In Triggering, click + to create a new trigger. Select DOM Ready as the trigger
-6. Under this trigger fires on, select All DOM Ready events
-7. Hit Submit and publish your workspace
