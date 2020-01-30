@@ -1,69 +1,56 @@
 # Getting started
 
-Add Talkative to your web app in less than 5 minutes. You can either install by copy/pasting a snippet or via npm.
+FounderPhone gives your most important customers a VIP hotline. Receive a FounderPhone number and start sending and receiving text messages from your customers in less than five minutes.
 
-Login to [Talkative](https://meettalkative.com) and click Create an app.  Fill out all information in the Install page and note down your App ID.
+If you have any questions, please send us a text at (510)-756-2522 or email us at support@founderphone.com. You can also schedule a demo [here](https://meetings.hubspot.com/kunal14/founderphone).
 
-## Install via snippet
+## Receiving a FounderPhone number
 
-Copy the code snippet you see in the Install page in to `<head>` of every page of your site where you might want to reach a user. The snippet should look like this:
+ 1. Log in to [FounderPhone](https://founderphone.com) 
+ 2. Enter your credit card information in the "Payment information" box
+ 3. Click "Save"
+ 4. Click "Subscribe"
+ 5. Your FounderPhone number will be automatically generated and displayed in the "Your phone number" box
 
-```
-<!-- Start of async Talkative code -->
-<script>
-!(function() {
-  (o = document.createElement("script")),
-    (o.type = "text/javascript"),
-    (o.id = "talkativeSdkScipt"),
-    (o.crossorigin = "anonymous"),
-    (o.src = "https://meettalkative.com/resources/talkative.min.js"),
-    (n = document.getElementsByTagName("script")[0]),
-    n.parentNode.insertBefore(o, n);
-})();
-talkativeSdkScipt.addEventListener("load", function() {
-  talkative.load(YOUR_APP_ID);
-});
-</script>
-<!-- End of async Talkative code -->
-```
-where `YOUR_APP_ID` is the Talkative App ID of your app that you can find in the Install page
+Any texts sent to your FounderPhone number will be forwarded to your Slack (instructions for connecting to Slack are below). 
 
-You can reach your users on any page which has the above snippet. You'll see them online in your dashboard and can call them at any time. 
+Now share your number with your most important customers and ensure they're always able to reach your team!
 
-You can access Talkative functions anywhere in your page via the `window` object. For example, just call `window.talkative.identify(USER_EMAIL)` or `window.talkative.track()`.
+## Connecting your FounderPhone number to Slack
 
-## Install via npm
+1. Log in to [FounderPhone](https://founderphone.com) and follow the instructions below. 
+2. Click "Connect to Slack" in the "Connect your number to your Slack" box
+3. Click "Allow" when FounderPhone requests permission to connect to your Slack workspace. 
+4. Enter the emails for team members who should see texts sent to your FounderPhone number in Slack. These users will be invited to every Slack channel where you send and receive messages from customers. 
+5. Text your FounderPhone number to ensure texts to your FounderPhone are showing up in Slack
 
-If you use npm or yarn with your frontend, you can also use the [Talkative npm package](https://www.npmjs.com/package/talkative-sdk).
+## Sending and receiving texts in Slack
 
-1. Run `npm i talkative-sdk --save` to install the SDK on your frontend.
-2. In every page that you would like to reach a user, import the package with `import talkative from "talkative-sdk";`
-3. On page load, call `talkative.load(YOUR_APP_ID)` where `YOUR_APP_ID` is the Talkative App ID of your app that you can find in the Install page. 
+With FounderPhone, every customer phone number is associated with a separate Slack channel. 
 
-You can reach your users on any page which has the `load` function called. You'll see them online in your dashboard and can call them at any time.
+***How to reply to a text from a customer:***
 
-# Advanced
+When a customer first texts you, a new Slack channel will be created for that customer. To  reply to a text from a customer, type `"@FounderPhone <message to send>"` in the channel associated with that customer.
 
-## Tracking events
-Track and segment users you want to talk to by actions they've taken
+*Note that messages entered in the channel will not automatically be sent to the customer associated with the channel.* This means that you and your team can discuss customer messages directly in the channel associated with the customer, and then respond to the customer in the same channel.
 
-By default, if you have the Talkative snippet installed on a page, you can see which pages your users are visiting. You can also track more granular events like completeing onboarding, pressing a Submit button or trying a new feature. Simply call `talkative.track(EVENT_NAME)`.
+You can also rename the channel to anything you want (e.g., the customer's name). The FounderPhone app will remember the phone number associated with the channel.
 
-## Identifying users
-Identify users by email to figure out who to reach out to for user interviews
+***How to initiate a text with a customer who hasn't texted you before:***
+1. Create new channel in Slack where you want to send and receive texts from a customer
+2. Add FounderPhone to the channel by typing "@FounderPhone", hitting "enter", and clicking "Invite to Channel"
+3. Use the slash command `"/founderphonetext <number to text> <message to send>"` to send a text to the customer. The `<number to text>` should be in the following format: +5107562522
+4. For all subsequent messages to the customer, simply type `"@FounderPhone <message to send>"` (the same command as if you are replying to a customer)
 
-1. If you want to identify users with their email address, you can call `talkative.identify(YOUR_USERS_EMAIL)` on any page that has the Talkative snippet from above. As soon as you call this function, the unidentified user on your page will be labeled with `YOUR_USERS_EMAIL` going forward. 
+## Call forwarding
 
-2. When logging out your user, call `talkative.logout()` so that we no longer associate new users visiting your page in the same browser.
+FounderPhone can forward calls to any valid phone number.
 
-# API
+1. Log in to [FounderPhone](https://founderphone.com) and follow the instructions below
+2. Enter the phone number where you want your FounderPhone calls to be forwarded to in the "Forward voice calls box". The phone number should be in the following format: +5107562522
 
-| Function | Parameters        | Return Value | Where to call                           | Example                                      |
-|----------|-------------------|--------------|-----------------------------------------|----------------------------------------------|
-| load     | appID: String     | None         | On every page you want to use Talkative | talkative.load("2XlXiopHy")                  |
-| identify | email: String     | None         | When you're logging in a user           | talkative.identify("test@meettalkative.com") |
-| track    | eventName: String | None         | At time of any event you want to track  | talkative.track("Onboarding complete")       |
-| logout   | None              | None         | When you're logging out a user          | talkative.logout()                           |
+## Additional help
 
+Use the slash command `/founderphonehelp` for instructions about how to use FounderPhone.
 
-If you have any trouble at all with installation, just email us at <support@meettalkative.com> or on the chat in the bottom right. We'll get back to you in 12 hours or less.
+You can also send us a text at (510)-756-2522, email us at support@founderphone.com, or schedule a demo [here](https://meetings.hubspot.com/kunal14/founderphone).
