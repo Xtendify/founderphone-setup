@@ -20,9 +20,9 @@ Now share your number with your most important customers and ensure they're alwa
 
 1. Log in to [Founderphone](https://founderphone.com) and follow the instructions below. 
 2. Click "Connect to Slack" in the "Connect your number to your Slack" box
-3. Click "Allow" when lossless requests permission to connect to your Slack workspace. 
-4. Enter the emails for team members who should see texts sent to your Lossless number in Slack. These users will be invited to every Slack channel where you send and receive messages from customers. 
-5. Text your lossless number to ensure texts to your lossless are showing up in Slack
+3. Click "Allow" when Founderphone requests permission to connect to your Slack workspace. 
+4. Enter the emails for team members who should see texts sent to your Founderphone number in Slack. These users will be invited to every Slack channel where you send and receive messages from customers. 
+5. Text your Founderphone number to ensure texts to your Founderphone are showing up in Slack
 
 ## Sending and receiving texts in Slack
 
