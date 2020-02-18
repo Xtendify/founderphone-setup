@@ -1,6 +1,6 @@
 # Getting started
 
-Founderphone gives your most important customers a VIP hotline. Receive a Founderphone number and start sending and receiving text messages from your customers in less than five minutes.
+Founderphone allows your company to deliver exceptional customer support via text and calls, directly from Slack. Receive a Founderphone number and start sending and receiving texts and calls from your customers in less than five minutes.
 
 If you have any questions, please send us a text at (510)-756-2522 or email us at support@founderphone.com. You can also schedule a demo [here](https://meetings.hubspot.com/kunal14/founderphone).
 
