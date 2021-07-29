@@ -6,7 +6,7 @@ If you have any questions, please send us a text at +15106302297 or email us at 
 
 ## Receiving a Founderphone number
 
- 1. Log in to [Founderphone](https://founderphone.com/login/)
+ 1. Log in to [Founderphone](https://app.founderphone.com/login/)
  2. Enter your credit card information in the "Payment information" box
  3. Click "Save"
  4. Click "Subscribe"
@@ -18,7 +18,7 @@ Now share your number with your most important customers and ensure they're alwa
 
 ## Connecting your Founderphone number to Slack
 
-1. Log in to [Founderphone](https://founderphone.com) and follow the instructions below.
+1. Log in to [Founderphone](https://app.founderphone.com) and follow the instructions below.
 2. Click "Connect to Slack" in the "Connect your number to your Slack" box
 3. Click "Allow" when Founderphone requests permission to connect to your Slack workspace.
 4. Enter the emails for team members who should see texts sent to your Founderphone number in Slack. These users will be invited to every Slack channel where you send and receive messages from customers.
@@ -46,7 +46,7 @@ You can also rename the channel to anything you want (e.g., the customer's name)
 
 Founderphone can forward calls to any valid phone number.
 
-1. Log in to [Founderphone](https://founderphone.com) and follow the instructions below
+1. Log in to [Founderphone](https://app.founderphone.com) and follow the instructions below
 2. Enter the phone number where you want your founderphone calls to be forwarded to in the "Forward voice calls box". The phone number should be in the following format: +15106302297
 
 ## Additional help
